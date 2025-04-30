@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #454545;
+  padding: 20px;
+}
+.fim footer {
+  background-color: #252525;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 30px;
+  position: relative;
+  top: 210PX;
+}
+
+
+h1{
+  color: #c0a000;
+}
+h3{
+  color: #c0a000;
+  text-align: left;
+}
+p{
+  color: white;
+}
+
+.primero {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Estilo geral para todas as imagens */
+.img {
+  width: 80%; /* Largura relativa para adaptação */
+  max-width: 550px; /* Não ultrapassa 600px */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+  display: none;
+  border: 3px solid #c0a000;
+}
+.img1 {
+  width: 60%; /* Largura relativa para adaptação */
+  max-width: 300px;
+  max-height:360px;
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor */
+  display: none; /* Oculta todas inicialmente */
+}
+
+.imagem-d {
+  display: block;
+}
+/* MEDIA QUERY para tablets: largura até 768px */
+@media (max-width: 768px) {
+  .imagem-d {
+    display: none; /* Esconde a imagem de desktop */
+  }
+
+  .imagem-t {
+    display: block; /* Mostra a imagem do tablet */
+  }
+
+  body {
+    background-color: #626262;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagem-t {
+    display: none;
+  }
+
+  .imagem-c {
+    display: block;
+  }
+
+  body {
+    background-color: #797979;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+nav 
+{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; 
+}
+  
+  ul 
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+  li a 
+{
+text-decoration: none;
+color: #c0a000;
+font-weight: bold;
+
+}
+
+ol
+{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+  
+li a:hover {
+  color: #ff1515;
+}
+li::marker {
+  color: #c0a000; /* Altere para a cor desejada */
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #c0a000;
+  margin: 20px 0;
+}
+.segundo {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.imagem-dt {
+  display: block;
+}
+@media (max-width: 768px) {
+  .imagem-dt {
+    display: none;
+  }
+  .imagem-tt {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .imagem-tt {
+    display: none;
+  }
+  .imagem-ct {
+    display: block; 
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+.terceiro
+{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
